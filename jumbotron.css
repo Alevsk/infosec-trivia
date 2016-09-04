@@ -1,0 +1,115 @@
+/* Move down content because we have a fixed navbar that is 50px tall */
+body {
+  padding-bottom: 20px;
+  background: #fff;
+}
+.bs-callout-danger {
+    border-left-color: #ce4844 !important;
+}
+.bs-callout-sucess {
+    border-left-color: #398439 !important;
+}
+.bs-callout {
+    padding: 20px;
+    margin: 20px 0;
+    border: 1px solid #eee;
+    border-left-width: 5px;
+    border-radius: 3px;
+}
+
+.col-centered{
+    float: none;
+    margin: 0 auto;
+}
+.btn-orange {
+    color: #fff;
+    background-color: #e65b44;
+    border-color: #e65b44;
+}
+.btn-orange:hover {
+    color: #fff;
+    background-color: #660f00;
+    border-color: #660f00;
+}
+.song-title {
+	color: #FFF;
+	background: #004c6f;
+	padding: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.song-title span {
+	font-size: 80%;
+	padding: 10px;
+    border-radius: 100%;
+    background: #4CAF50;
+}
+
+.song-player {
+	background: #f0f0f0;
+	padding: 20px;
+	border-radius: 10px;
+	margin-bottom:10px;
+    margin: 0 auto;
+    padding: 10px 0px;
+
+}
+.song-player h4 {
+    font-size: 15px;
+    font-weight: 600;
+}
+#mep_0 {
+    margin:0 auto;
+    width: 100% !important;
+}
+.song-footer {
+    margin: 10px -15px -10px -15px;
+    padding:5px;
+    text-align: center;
+    background:#004c6f;
+    color: #fff;
+    border-radius: 0px 0px 5px 5px;
+}
+.song-footer p {
+    padding-top: 5px;
+}
+
+.song-footer a {
+    color: #fff;
+}
+.mejs-duration {
+    display: none !important;
+}
+.song-player hr {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+#qHolder h1 {
+}
+
+.lmodal {
+    display:    none;
+    position:   fixed;
+    z-index:    1000;
+    top:        0;
+    left:       0;
+    height:     100%;
+    width:      100%;
+    background: rgba( 255, 255, 255, .8 ) 
+                url('http://i.stack.imgur.com/FhHRx.gif') 
+                50% 50% 
+                no-repeat;
+}
+
+/* When the body has the loading class, we turn
+   the scrollbar off with overflow:hidden */
+body.loading {
+    overflow: hidden;   
+}
+
+/* Anytime the body has the loading class, our
+   modal element will be visible */
+body.loading .lmodal {
+    display: block;
+}
