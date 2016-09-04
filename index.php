@@ -57,7 +57,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">Happy hacking MDC Club</a>
+          <a class="navbar-brand" href="#"></a>
         </div>
       </div>
     </nav>
@@ -72,20 +72,14 @@
       <!-- Example row of columns -->
       <div class="row">
         <div class="col-md-4">
-          <h2>Heading</h2>
-          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+          <h1 id="pts"></h1>
+          <p></p>
         </div>
+        <div class="col-md-4"></div>
         <div class="col-md-4">
-          <h2>Heading</h2>
-          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+          <h1 style=""><div class='timer' data-seconds-left=60></div></h1>
+          <p></p>
        </div>
-        <div class="col-md-4">
-          <h2>Heading</h2>
-          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-        </div>
       </div>
 
       <hr>
@@ -98,7 +92,7 @@
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title">Happy hacking club</h4>
+        <h4 class="modal-title">¿Que tanto sabes de seguridad?</h4>
       </div>
       <div class="modal-body">
         <p style="font-size:20px;text-align:center;"><img src="<?php echo DOMAIN; ?>img/hh.PNG" /></p>
@@ -110,6 +104,24 @@
     </div><!-- /.modal-content -->
   </div><!-- /.modal-dialog -->
 </div><!-- /.modal -->
+
+<div id="finalModal" class="modal fade" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">Gracias por participar en la trivia</h4>
+      </div>
+      <div class="modal-body">
+        <p style="font-size:20px;text-align:center;"><img src="<?php echo DOMAIN; ?>img/hh.PNG" /></p>
+        <p id="finalScore" style="font-size:20px;text-align:center;">Tu puntiación fue de 0 pts</p>
+      </div>
+      <div class="modal-footer">
+        <a type="button" href="index.php" class="btn btn-lg btn-primary">Empezar de nuevor</a>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div>
 
 <div class="lmodal"><!-- Place at bottom of page --></div>
 
@@ -123,6 +135,7 @@
     <script src="<?php echo DOMAIN; ?>assets/js/ie10-viewport-bug-workaround.js"></script>
     <script type="text/javascript" src="https://cdn.datatables.net/v/dt/dt-1.10.12/datatables.min.js"></script>
     <script src="<?php echo DOMAIN; ?>js/player/mediaelement-and-player.min.js"></script>
+    <script src="<?php echo DOMAIN; ?>js/jquery.simple.timer.js"></script>
     <script src="<?php echo DOMAIN; ?>js/app.js"></script>
 
   </body>

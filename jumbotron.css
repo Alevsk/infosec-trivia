@@ -113,3 +113,21 @@ body.loading {
 body.loading .lmodal {
     display: block;
 }
+.is-complete {
+    color: red !important;
+    -webkit-animation-name: blinker;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: cubic-bezier(1.0,0,0,1.0);
+    -webkit-animation-duration: 1s;
+}
+
+.timer, .timer-done, .timer-loop {
+    font-size: 30px;
+    color: black;
+    font-weight: bold;
+    padding: 10px;
+}
+.timer div {
+    float: left;
+    font-size:40px;
+}

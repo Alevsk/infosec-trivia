@@ -1,3 +1,5 @@
+var points = 0;
+
 function getQuestion() {
 	$.get( "app.php", { cmd: "getQuestion" } )
 	.done(function( data ) {
@@ -23,9 +25,13 @@ $(document).ready(function() {
 		$.get( "app.php", { cmd: "checkAnswer", id:$(this).data("aId") } )
 		.done(function( data ) {
 			
-			if(data.Answer == "yes") {
-				console.log("correct");
-			}
+			if(data.Answer == "yes")
+				points += 10;
+			else
+				points -= 10;
+
+			$('#pts').html(points + ' pts');
+
 			getQuestion();
 		});
 	});
@@ -33,6 +39,15 @@ $(document).ready(function() {
 	$('#startGameButton').click(function() {
 		
 		$('#myModal').modal('toggle');
+
+		$('.timer').startTimer({
+		  onComplete: function(element){
+		    element.addClass('is-complete');
+		    $('#finalScore').html('Tu puntiación fue de ' + points + ' pts');
+		    $('#finalModal').modal('toggle');
+		  }
+		});
+		
 		getQuestion();
 
 	});
