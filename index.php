@@ -57,7 +57,12 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#"></a>
+          <a id="pts" class="navbar-brand" href="javascript:void(0)"></a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><div class='timer' data-seconds-left=60></div><</li>
+          </ul>
         </div>
       </div>
     </nav>
@@ -72,12 +77,12 @@
       <!-- Example row of columns -->
       <div class="row">
         <div class="col-md-4">
-          <h1 id="pts"></h1>
+          
           <p></p>
         </div>
         <div class="col-md-4"></div>
         <div class="col-md-4">
-          <h1 style=""><div class='timer' data-seconds-left=60></div></h1>
+          
           <p></p>
        </div>
       </div>
@@ -96,7 +101,7 @@
       </div>
       <div class="modal-body">
         <p style="font-size:20px;text-align:center;"><img src="<?php echo DOMAIN; ?>img/hh.PNG" /></p>
-        <p style="font-size:20px;text-align:center;">Bienvenido a la trivia de conceptos de seguridad informatica, compite contra otras personas y gana souvenirs de Oracle</p>
+        <p style="font-size:20px;text-align:center;">Bienvenido a la trivia de conceptos de seguridad informatica, compite contra otras personas y gana algunos dulces</p>
       </div>
       <div class="modal-footer">
         <button type="button" id="startGameButton" class="btn btn-lg btn-primary">Clic para comenzar</button>
@@ -117,7 +122,7 @@
         <p id="finalScore" style="font-size:20px;text-align:center;">Tu puntiación fue de 0 pts</p>
       </div>
       <div class="modal-footer">
-        <a type="button" href="index.php" class="btn btn-lg btn-primary">Empezar de nuevor</a>
+        <a type="button" href="index.php" class="btn btn-lg btn-primary">Empezar de nuevo</a>
       </div>
     </div><!-- /.modal-content -->
   </div><!-- /.modal-dialog -->

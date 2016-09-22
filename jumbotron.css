@@ -85,9 +85,17 @@ body {
     margin-top: 10px;
     margin-bottom: 10px;
 }
-#qHolder h1 {
+#qHolder  {
+    margin-top:20px;
 }
-
+#qHolder h1 {
+    
+}
+#pts {
+    font-size: 40px;
+    font-weight:bold;
+    color: #ffd100;
+}
 .lmodal {
     display:    none;
     position:   fixed;
@@ -123,7 +131,7 @@ body.loading .lmodal {
 
 .timer, .timer-done, .timer-loop {
     font-size: 30px;
-    color: black;
+    color: #ffd100;
     font-weight: bold;
     padding: 10px;
 }
