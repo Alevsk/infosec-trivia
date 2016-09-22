@@ -1,4 +1,8 @@
 /* Move down content because we have a fixed navbar that is 50px tall */
+@font-face {
+    font-family: ssfighter;
+    src: url(fonts/ssf4.woff);
+}
 body {
   padding-bottom: 20px;
   background: #fff;
@@ -89,12 +93,16 @@ body {
     margin-top:20px;
 }
 #qHolder h1 {
-    
+
+    color: #fff;
+
 }
 #pts {
+    font-family: ssfighter !important;
     font-size: 40px;
     font-weight:bold;
-    color: #ffd100;
+    color: #333;
+    margin-top:10px;
 }
 .lmodal {
     display:    none;
@@ -105,19 +113,19 @@ body {
     height:     100%;
     width:      100%;
     background: rgba( 255, 255, 255, .8 ) 
-                url('http://i.stack.imgur.com/FhHRx.gif') 
-                50% 50% 
-                no-repeat;
+    url('http://i.stack.imgur.com/FhHRx.gif') 
+    50% 50% 
+    no-repeat;
 }
 
 /* When the body has the loading class, we turn
-   the scrollbar off with overflow:hidden */
+the scrollbar off with overflow:hidden */
 body.loading {
     overflow: hidden;   
 }
 
 /* Anytime the body has the loading class, our
-   modal element will be visible */
+modal element will be visible */
 body.loading .lmodal {
     display: block;
 }
@@ -131,11 +139,35 @@ body.loading .lmodal {
 
 .timer, .timer-done, .timer-loop {
     font-size: 30px;
-    color: #ffd100;
+    color: #333;
     font-weight: bold;
     padding: 10px;
 }
 .timer div {
+    font-family: ssfighter !important;
     float: left;
     font-size:40px;
+    margin-top:10px;
+}
+.navbar-inverse {
+
+    background-color: #ffd100;
+    border-color: #ffd100;
+}
+.jumbotron {
+    padding-bottom: 0px !important;
+    background: url(img/Lvrsljl.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 1000px;
+    margin-bottom: 0px !important;
+}
+
+.btn-primary {
+    color: #333;
+    font-weight: bold;
+    background-color: #ffd100;
+    border-color: #ffd100;
 }

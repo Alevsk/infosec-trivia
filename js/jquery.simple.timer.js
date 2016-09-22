@@ -157,8 +157,8 @@
 
   Timer.prototype.clearTimer = function(element){
     element.find('.seconds').text('00');
-    element.find('.minutes').text('00:');
-    element.find('.hours').text('00:');
+    element.find('.minutes').text('00 : ');
+    element.find('.hours').text('00 : ');
   };
 
   Timer.prototype.currentTime = function() {
@@ -206,8 +206,8 @@
     }
 
     element.find('.seconds').text(finalValues.pop());
-    element.find('.minutes').text(finalValues.pop() + ':');
-    element.find('.hours').text(finalValues.pop() + ':');
+    element.find('.minutes').text(finalValues.pop() + '  :  ');
+    element.find('.hours').text(finalValues.pop() + '  :  ');
   };
 
 

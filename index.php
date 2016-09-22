@@ -29,8 +29,8 @@
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
     <script src="<?php echo DOMAIN; ?>assets/js/ie-emulation-modes-warning.js"></script>
-    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/dt/dt-1.10.12/datatables.min.css"/>
-    <script src="https://use.fontawesome.com/ab60f87b2b.js"></script>
+    <link rel="stylesheet" type="text/css" href="<?php echo DOMAIN; ?>css/datatables.min.css"/>
+    <script src="<?php echo DOMAIN; ?>js/ab60f87b2b.js"></script>
     <link rel="stylesheet" href="<?php echo DOMAIN; ?>js/player/mediaelementplayer.min.css" />
     <link rel="stylesheet" href="<?php echo DOMAIN; ?>js/player/progression-player.css" />
     <link rel="stylesheet" href="<?php echo DOMAIN; ?>js/player/skin-fancy.css" />
@@ -58,10 +58,11 @@
             <span class="icon-bar"></span>
           </button>
           <a id="pts" class="navbar-brand" href="javascript:void(0)"></a>
+          <img src="<?php echo DOMAIN; ?>img/giphy.gif" width="60px"/>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
-            <li><div class='timer' data-seconds-left=60></div><</li>
+            <li><div class='timer' data-seconds-left=60></div></li>
           </ul>
         </div>
       </div>
@@ -73,23 +74,7 @@
       </div>
     </div>
 
-    <div class="container">
-      <!-- Example row of columns -->
-      <div class="row">
-        <div class="col-md-4">
-          
-          <p></p>
-        </div>
-        <div class="col-md-4"></div>
-        <div class="col-md-4">
-          
-          <p></p>
-       </div>
-      </div>
 
-      <hr>
-
-    </div> <!-- /container -->
 
 
 <div id="myModal" class="modal fade" tabindex="-1" role="dialog">
@@ -133,12 +118,12 @@
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="<?php echo DOMAIN; ?>js/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery.min.js"><\/script>')</script>
     <script src="<?php echo DOMAIN; ?>js/bootstrap.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="<?php echo DOMAIN; ?>assets/js/ie10-viewport-bug-workaround.js"></script>
-    <script type="text/javascript" src="https://cdn.datatables.net/v/dt/dt-1.10.12/datatables.min.js"></script>
+    <script type="text/javascript" src="<?php echo DOMAIN; ?>js/datatables.min.js"></script>
     <script src="<?php echo DOMAIN; ?>js/player/mediaelement-and-player.min.js"></script>
     <script src="<?php echo DOMAIN; ?>js/jquery.simple.timer.js"></script>
     <script src="<?php echo DOMAIN; ?>js/app.js"></script>
