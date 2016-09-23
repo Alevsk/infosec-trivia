@@ -20,7 +20,9 @@ body {
     border-left-width: 5px;
     border-radius: 3px;
 }
-
+.sendAnswer {
+    font-size: 30px;
+}
 .col-centered{
     float: none;
     margin: 0 auto;

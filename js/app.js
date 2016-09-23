@@ -30,7 +30,7 @@ function getQuestion() {
 		for(var i in data.Answers) {
 			var a = $('<a class="btn btn-primary btn-lg sendAnswer" href="#" role="button"></a>').html(data.Answers[i].answer);
 			a.data("aId",data.Answers[i].id);
-			var p = $('<p></p>').append(a);
+			var p = $('<p style="text-align: center;"></p>').append(a);
 			$('#qHolder').append(p);
 		}
 
